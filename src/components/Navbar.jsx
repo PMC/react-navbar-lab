@@ -4,7 +4,7 @@ import "./Navbar.css";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav>
+    <nav className="Navbar-component">
       <Link to="/" className="title">
         Navbar-Lab
       </Link>
