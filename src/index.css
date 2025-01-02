@@ -1,1 +1,4 @@
 @import url("./pico.min.css");
+main {
+  padding-bottom: 2rem;
+}
