@@ -6,15 +6,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f172a;
+  background-color: #13171f;
   color: white;
   position: sticky;
   top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  z-index: 99;
 }
 
 nav .title {
   font-size: 1.5rem;
-  margin: 1rem;
   font-weight: bold;
   text-decoration: none;
   color: white;

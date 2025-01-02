@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 export const Services = () => {
   return (
-    <div>
+    <main className="container">
+      <h1>Services</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nobis quis
         est ratione et. Sit a quaerat omnis nisi voluptas harum fugiat quis
@@ -242,6 +243,6 @@ export const Services = () => {
         temporibus. Harum incidunt, aliquam velit voluptate modi quas itaque
         quod ratione quidem magni dolorem!
       </p>
-    </div>
+    </main>
   );
 };

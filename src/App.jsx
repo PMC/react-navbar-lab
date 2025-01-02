@@ -1,9 +1,9 @@
 import { useState } from "react";
+import React from "react";
 
-import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import { About, Contact, Home, Services } from "./pages";
+import { About, Contact, Home, Services, Footer } from "./pages";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }
