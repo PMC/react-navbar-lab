@@ -5,9 +5,11 @@ import menuOpenIcon from "../assets/menu_open_36dp_E8EAED_FILL0_wght400_GRAD0_op
 import "./Navbar.css";
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const closeMobileMenu = () => setMenuOpen(false);
+
   return (
     <nav className="Navbar-component">
-      <Link to="/" className="title" onClick={() => setMenuOpen(false)}>
+      <Link to="/" className="title" onClick={() => closeMobileMenu()}>
         Navbar-Lab
       </Link>
 
@@ -20,17 +22,17 @@ export const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/services" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/services" onClick={() => closeMobileMenu()}>
             Services
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/about" onClick={() => closeMobileMenu()}>
             About
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/contact" onClick={() => closeMobileMenu()}>
             Contact
           </NavLink>
         </li>
