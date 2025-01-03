@@ -54,14 +54,10 @@
   height: 2rem;
 }
 
-.Navbar-component .menu span {
-  height: 0.4rem;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0.2rem;
-}
-
 @media (max-width: 480px) {
+  .Navbar-component .title {
+    height: 3rem;
+  }
   .Navbar-component .menu {
     display: flex;
   }
@@ -88,6 +84,6 @@
   }
 
   .Navbar-component ul li a {
-    margin: 0.2rem 0.5rem;
+    padding: inherit;
   }
 }

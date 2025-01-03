@@ -218,27 +218,13 @@ export const Home = (props) => {
 
             <label htmlFor="select">Select</label>
             <select id="select" name="select" required>
-              <option value="" selected>
-                Selectâ€¦
-              </option>
-              <option>â€¦</option>
+              <option>Select</option>
+              <option>Two</option>
             </select>
 
             <label htmlFor="file">
               File browser
               <input type="file" id="file" name="file" />
-            </label>
-
-            <label htmlFor="range">
-              Range slider
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                id="range"
-                name="range"
-              />
             </label>
 
             <div className="grid">
@@ -297,12 +283,7 @@ export const Home = (props) => {
                   <strong>Checkboxes</strong>
                 </legend>
                 <label htmlFor="checkbox-1">
-                  <input
-                    type="checkbox"
-                    id="checkbox-1"
-                    name="checkbox-1"
-                    checked
-                  />
+                  <input type="checkbox" id="checkbox-1" name="checkbox-1" />
                   Checkbox
                 </label>
                 <label htmlFor="checkbox-2">
@@ -321,7 +302,6 @@ export const Home = (props) => {
                     id="radio-1"
                     name="radio"
                     value="radio-1"
-                    checked
                   />
                   Radio button
                 </label>
@@ -346,7 +326,6 @@ export const Home = (props) => {
                     id="switch-1"
                     name="switch-1"
                     role="switch"
-                    checked
                   />
                   Switch
                 </label>
@@ -419,13 +398,6 @@ export const Home = (props) => {
           </div>
         </section>
 
-        <section id="modal">
-          <h2>Modal</h2>
-          <button className="contrast" data-target="modal-example">
-            Launch demo modal
-          </button>
-        </section>
-
         <section id="accordions">
           <h2>Accordions</h2>
           <details>
@@ -490,7 +462,7 @@ export const Home = (props) => {
         <section id="loading">
           <h2>Loading</h2>
           <article aria-busy="true"></article>
-          <button aria-busy="true">Please waitâ€¦</button>
+          <button aria-busy="true">Please wait</button>
         </section>
       </main>
     </>
